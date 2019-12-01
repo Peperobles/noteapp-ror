@@ -13,7 +13,10 @@
  *= require_tree .
  *= require_self
  */
- @import 'reset.css';
- @import 'global.css.scss';
- @import 'notes.css.scss';
- @import 'welcome.css.scss';
+  @import 'reset.css';
+  @import 'font-awesome';
+  @import 'bootstrap';
+  @import 'global.css.scss';
+  @import 'notes.css.scss';
+  @import 'welcome.css.scss';
+  

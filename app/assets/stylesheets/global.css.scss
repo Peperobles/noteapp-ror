@@ -1,0 +1,16 @@
+header {
+  position: fixed;
+  width: 100%;
+  background: #0e536752;
+  padding-top: 15px;
+  .header_content {
+    display: flex;
+    justify-content: space-between;
+    a{
+        color: white;
+        &#logo{
+            font-size: 30px;
+        }
+    }
+  }
+}

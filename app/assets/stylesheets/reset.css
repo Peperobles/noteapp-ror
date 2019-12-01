@@ -41,6 +41,13 @@
     font-size: 2em;
     margin: 0.67em 0;
   }
+  p {
+    margin: 0 !important;
+  }
+  i.fab,i.fas,i.fa,i.far{
+    font-family:FontAwesome!important;
+    font-style: unset; 
+  }
   
   /* Grouping content
      ========================================================================== */

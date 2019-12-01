@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'haml', '~> 5.1', '>= 5.1.2'
 gem 'simple_form', '~> 5.0', '>= 5.0.1'
 gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'bootstrap', '~> 4.3.1'
+gem "font-awesome-rails"
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
