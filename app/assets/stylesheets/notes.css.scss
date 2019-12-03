@@ -1,8 +1,33 @@
 // Place all the styles related to the Notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-section{
-    &.generic-section{
-        padding-top: 70px;
-    }
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap');
+$reenie: 'Reenie Beanie', cursive;
+section {
+  &.generic-section {
+    padding-top: 70px;
+  }
+  .note-card {
+    text-align: center;
+    // width: 275px;
+    margin: 25px;
+    // min-height: 250px;
+    // max-height: 250px;
+    // padding-top: 35px;
+    border: 1px solid #e8e8e8;
+    border-top: 60px solid #fdfd86;
+    font-family: $reenie;
+    font-size: 22px;
+    border-bottom-right-radius: 60px 5px;
+    background: #ffff88;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      color-stop(81%, #ffff88),
+      color-stop(82%, #ffff88),
+      color-stop(82%, #ffff88),
+      color-stop(100%, #ffffc6)
+    );
+  }
 }
