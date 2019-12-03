@@ -38,4 +38,16 @@ section {
       }
     }
   }
+  &#icons{
+    padding: 20px;
+    background: #304157;
+    color: white;
+    .box-icons{
+      border-bottom: 1px solid #85d01e47;
+      padding: 20px;
+      i{
+        font-size: 30px;
+      }
+    }
+  }
 }
