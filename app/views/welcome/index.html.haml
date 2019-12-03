@@ -1,1 +1,37 @@
-%h1 Welcome placeholder
+%section#hero
+    .container
+        .hero_content
+            %h1 NoteApp
+            %p.text-first Ruby on Rails notes application
+            %i.fas.fa-pen-square
+            %button.button-first= link_to "Sign Up", new_user_registration_path
+
+%section#icons
+    .container
+        .row.text-center
+            .col-12.col-lg-4
+                .box-icons
+                    %i.far.fa-address-card
+                    %h2 Lorem
+                    %p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit officia aperiam, ipsam facilis blanditiis sit aliquid amet ea deserunt
+            .col-12.col-lg-4
+                .box-icons
+                    %i.far.fa-address-card
+                    %h2 Lorem
+                    %p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit officia aperiam, ipsam facilis blanditiis sit aliquid amet ea deserunt
+            .col-12.col-lg-4
+                .box-icons
+                    %i.far.fa-address-card
+                    %h2 Lorem
+                    %p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit officia aperiam, ipsam facilis blanditiis sit aliquid amet ea deserunt
+
+%section#banner
+    .container
+        .banner_content
+            %h2 Learn how NoteApp can help your team
+            %p.text-first Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde nisi porro officia quidem corrupti ducimus!
+            %button.button-first=link_to "Sign Up", new_user_registration_path
+
+%footer
+    .container
+        %p Copyright &copy; 2019 NoteApp
