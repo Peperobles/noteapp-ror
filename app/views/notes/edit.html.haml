@@ -1,7 +1,10 @@
 %section.generic-section
     %div.container
-        %h1 Edit Your %Note
+        %div.row
+            %div.col-12
 
-        = render 'form'
-
-        = link_to "Cancel", note_path
+                = render 'form'
+        %div.row
+            %div.col-12
+                %div.new-note-box
+                    = link_to "Cancel", note_path

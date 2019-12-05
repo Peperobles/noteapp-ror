@@ -1,33 +1,99 @@
 // Place all the styles related to the Notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap');
-$reenie: 'Reenie Beanie', cursive;
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap");
+$reenie: "Reenie Beanie", cursive;
 section {
   &.generic-section {
+    position: relative;
     padding-top: 70px;
-  }
-  .note-card {
-    text-align: center;
-    // width: 275px;
-    margin: 25px;
-    // min-height: 250px;
-    // max-height: 250px;
-    // padding-top: 35px;
-    border: 1px solid #e8e8e8;
-    border-top: 60px solid #fdfd86;
-    font-family: $reenie;
-    font-size: 22px;
-    border-bottom-right-radius: 60px 5px;
-    background: #ffff88;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      right bottom,
-      color-stop(81%, #ffff88),
-      color-stop(82%, #ffff88),
-      color-stop(82%, #ffff88),
-      color-stop(100%, #ffffc6)
-    );
+    min-height: 100vh;
+    background-image: url(image_path("building-glass-3.jpg"));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:before {
+      content: "";
+      background: #5e8b99a6;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+    }
+
+    .box-register {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      padding: 20px;
+      max-width: 450px;
+      margin: 50px auto;
+      border-radius: 10px;
+      box-shadow: 0px 1px 9px 0px #00000082;
+      form {
+        width: 80%;
+        label {
+          display: block;
+        }
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          width: 100%;
+          margin-bottom: 15px;
+          &[type="checkbox"] {
+            width: unset;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        input {
+          &[type="submit"] {
+            background: #8cadbc;
+            color: white;
+          }
+        }
+        .form-actions {
+          margin-top: 20px;
+        }
+      }
+    }
+    //Notes
+    .note-card {
+      text-align: center;
+      // width: 275px;
+      margin: 25px;
+      // min-height: 250px;
+      // max-height: 250px;
+      // padding-top: 35px;
+      border: 1px solid #e8e8e8;
+      border-top: 60px solid #fdfd86;
+      font-family: $reenie;
+      font-size: 22px;
+      border-bottom-right-radius: 60px 5px;
+      background: #ffff88;
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right bottom,
+        color-stop(81%, #ffff88),
+        color-stop(82%, #ffff88),
+        color-stop(82%, #ffff88),
+        color-stop(100%, #ffffc6)
+      );
+    }
+    .new-note-box {
+      text-align: center;
+      a {
+        color: white;
+        border: 1px solid white;
+        padding: 15px;
+        cursor: pointer;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
